@@ -6,16 +6,11 @@ pipeline {
     agent {
       node {
         // TODO: run this simple pipeline on jenkins 'master' node
-	agent {
-	  node {
-	    label 'master'
-	  }
-	}
+	label 'master'
       }
     }
 
     stages {
-
         stage('stage 1') {
             steps {
                 script {
